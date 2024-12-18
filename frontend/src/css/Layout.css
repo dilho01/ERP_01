@@ -1,0 +1,164 @@
+/* Definição da animação */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Contêiner Principal */
+.layout-container {
+  min-height: 100vh; /* Subtrai o padding do tamanho total */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: 100% 100%;
+  padding: 20px; /* Espaço ao redor do layout */
+  box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+  overflow: auto;
+}
+
+/* Logo */
+.layout-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Espaço acima do logo */
+}
+
+.layout-logo {
+  width: 180px; /* Largura fixa para o logo */
+  height: 180px; /* Mantém a proporção */
+  object-fit: contain; /* Ajusta a imagem no espaço */
+  margin-bottom: 20px; /* Espaço abaixo do logo */
+}
+
+/* Fundo geral com gradiente animado */
+.container {
+  overflow: auto;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+/* Caixa de login */
+.box {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 30px;
+  width: 350px;
+  max-width: 90%; /* Garante que não ultrapasse a tela */
+  max-height: 80vh; /* Limita a altura */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  overflow-y: auto; /* Adiciona scroll se necessário */
+  margin-bottom: 20px; /* Espaço entre a login-box e o rodapé */
+}
+/* Caso haja um logo */
+.has-logo .box {
+  margin-top: 0px; /* Espaçamento padrão abaixo do logo */
+}
+
+/* Caso NÃO haja um logo */
+.no-logo .box {
+  margin-top: 150px; /* Espaço maior quando o logo não está presente */
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .layout-logo {
+    width: 120px; /* Reduz o tamanho do logo em telas menores */
+    margin-bottom: 15px; /* Menor espaçamento abaixo do logo */
+  }
+
+  .box {
+    width: 300px; /* Ajusta a largura da login-box */
+    padding: 20px; /* Reduz o padding em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .layout-logo {
+    width: 100px; /* Logo ainda menor para telas pequenas */
+    margin-bottom: 10px; /* Menor espaçamento abaixo do logo */
+  }
+
+  .box {
+    width: 90%; /* Ocupa quase toda a largura da tela */
+    padding: 15px; /* Reduz ainda mais o padding */
+  }
+}
+
+
+/* Estilo para o botão remover */
+.remove-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  margin: 10px auto;
+  display: block;
+}
+
+.remove-button:hover {
+  background: #e60000;
+}
+
+
+
+/* Botão de login */
+.button {
+  width: 100%;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Estilo dos campos de entrada */
+.form-group input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+button {
+  background: linear-gradient(120deg, #1d2671, #37c3ac);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(120deg, #37c3ac, #1d2671);
+}

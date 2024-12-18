@@ -1,0 +1,116 @@
+/* Estilo base da barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  
+  /* Largura da barra lateral quando aberta */
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  /* Tema escuro */
+  .sidebar.dark {
+    background-color: #1a1a2e;
+    color: white;
+  }
+  
+  /* Tema claro */
+  .sidebar.light {
+    background-color: #f5f5f5;
+    color: black;
+  }
+  
+  /* Botão de abrir/fechar */
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #1a1a2e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Ajuste do botão em tema claro */
+  .sidebar.light .toggle-btn {
+    background-color: #f5f5f5;
+    color: black;
+  }
+  
+  /* Lista de itens da barra lateral */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0;
+    width: 100%;
+  }
+  
+  .sidebar li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar.dark li:hover {
+    background-color: #162447;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .sidebar a span {
+    margin-left: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .sidebar.open a span {
+    opacity: 1;
+  }
+  
+  /* Botão de alternância de tema */
+  .theme-toggle {
+    margin-top: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    justify-content: flex-start;
+    transition: background 0.3s ease;
+  }
+  
+  .theme-toggle span {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  

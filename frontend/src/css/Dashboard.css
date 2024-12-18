@@ -1,0 +1,247 @@
+/* Container Principal */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* Barra de Navegação */
+.navbar {
+    width: 100%; /* Centralizada */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #aaa;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Tipos de Tabelas */
+.table-types {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.table-btn {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.table-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.table-btn.active {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+/* Quadro Central */
+.dashboard-box {
+    width: 100%;
+    max-width: 1600px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Detalhes da Tabela */
+.table-details {
+    margin-top: 20px;
+    color: #ddd;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Responsividade */
+
+/* Telas pequenas (máx. 768px) */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 50px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .table-types {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .table-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .dashboard-box {
+        height: 300px;
+        padding: 15px;
+    }
+
+    .table-details {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Telas muito pequenas (máx. 480px) */
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .table-types {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .table-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .dashboard-box {
+        height: 250px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .table-details {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Telas maiores (mín. 1400px) */
+@media (min-width: 1400px) {
+    .dashboard-container {
+        padding: 120px;
+    }
+
+    .navbar {
+        width: 80%;
+    }
+
+    .dashboard-box {
+        height: 500px;
+    }
+}
+/* Seção de Conteúdo */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section-group {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section-group h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .section-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .section-items button {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .section-items button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  

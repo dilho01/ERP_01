@@ -1,0 +1,83 @@
+
+  /* Container do formulário */
+  .form-container {
+    width: 100%; /* O formulário ocupará 80% da largura da tela */
+    max-width: 800px; 
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px;
+    text-align: center;
+  }
+  
+  /* Título */
+  .form-container h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Mensagem de sucesso ou erro */
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .message.success {
+    background-color: #28a745;
+  }
+  
+  .message.error {
+    background-color: #dc3545;
+  }
+  
+  /* Grupos do formulário */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Rótulos */
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  /* Campos de entrada */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Botão */
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+ 
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 15px;
+    }
+  }
+  
